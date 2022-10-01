@@ -1,0 +1,257 @@
+.App {  
+position: absolute;
+width: 550px;
+height: 868px;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);    /* Older Gecko browser */
+-ms-transform: translate(-50%, -50%);     /* IE9+ */
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+/*
+left: 65px;
+top: 53px;
+*/
+background: #23252C;
+border-radius: 10px 10px 10px 10px;
+}
+
+.Face {  
+  position: absolute;
+  width: 317px;
+  height: 317px;
+  left: 116px;
+  top: 44px;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.App-Main{
+  /* Rectangle 91 */
+  position: absolute;
+  width: 317px;
+  height: 399px;
+  left: 116px;
+  top: 361px;
+  background: #1A1B21;
+  
+  }
+
+.App-Info-Title{
+/* Joehan Misquitta */
+position: absolute;
+width: 213px;
+height: 29px;
+left: 53px;
+top: 21px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.App-Info-Designation{
+/* Frontend Developer */
+
+position: absolute;
+width: 178.06px;
+height: 14.19px;
+left: 70px;
+top: 53px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12.8px;
+line-height: 15px;
+text-align: center;
+
+color: #F3BF99;
+
+}
+
+.App-Info-Website{
+  position: absolute;
+  width: 228px;
+  height: 16px;
+  left: 45px;
+  top: 76px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+  
+  text-align: center;
+  
+  color: #F5F5F5;
+}
+.App-Info-Email{
+/* Button */
+box-sizing: border-box;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 13px 9px 11px;
+gap: 8px;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 35px;
+top: 107px;
+/* white */
+background: #FFFFFF;
+/* gray/300 */
+border: 1px solid #D1D5DB;
+/* shadow/sm */
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
+}
+.App-Info-Email > text{
+/* Text */
+width: 36px;
+height: 16px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+/* gray/700 */
+color: #374151;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.App-Info-Linkedln{
+  /* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 13px 9px 11px;
+gap: 8px;
+position: absolute;
+width: 115px;
+height: 34px;
+left: 167px;
+top: 107px;
+background: #5093E2;
+/* shadow/sm */
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
+}
+.App-Info-Linkedln > text{
+  /* Text */
+  width: 57px;
+  height: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */  
+  color: #FFFFFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.App-About-Text{
+  position: absolute;
+  width: 242.71px;
+  height: 21px;
+  left: 36px;
+  top: 174px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  color: #F5F5F5;
+}
+
+.App-About-Para{
+  position: absolute;
+  width: 247px;
+  height: 61px;
+  left: 36px;
+  top: 200px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+  color: #DCDCDC;
+}
+
+
+.App-Interest-Text{
+  position: absolute;
+  width: 242.71px;
+  height: 21px;
+  left: 36px;
+  top: 288px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  color: #F5F5F5;
+}
+
+.App-Interest-Para{
+  position: absolute;
+  width: 247px;
+  height: 61px;
+  left: 36px;
+  top: 314px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+  color: #DCDCDC;
+}
+
+.App-Footer-Social{
+  position: absolute;
+  width: 317px;
+  height: 64px;
+  left: 116px;
+  top: 760px;
+
+  background: #161619;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.Navbar{
+  display: flex;
+  align-items: center;
+  padding: 30px 25px;
+  height: 5px;
+}
+.Navbar > img , a{
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
