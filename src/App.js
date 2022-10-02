@@ -12,38 +12,38 @@ export default function App() {
     <div className="App">
       <img src={Face} className="Face" alt="Face"/>
       <div className="App-Main">
-        <text className="App-Info-Title">Joehan Misquitta</text>
-        <text className="App-Info-Designation">Frontend Developer</text>
-        <text className="App-Info-Website">joehanmisquitta.com</text>
+        <h2 className="App-Info-Title">Joehan Misquitta</h2>
+        <h3 className="App-Info-Designation">Frontend Developer</h3>
+        <h3 className="App-Info-Website">joehanmisquitta.com</h3>
         <a href="mailto:joehanm10@gmail.com?subject=I am Contacting you From Your Portfolio Website" rel="noreferrer">
           <button className="App-Info-Email">
             <img src={Email} alt="Email"/>
-            <text>Email</text>
+            <p>Email</p>
           </button>
         </a>
 
         <a href="https://www.linkedin.com/in/joehan-misquitta/" target="_blank" rel="noreferrer">
           <button className="App-Info-Linkedln">
             <img src={linkedln} alt="Linkedln"/>
-            <text>Linkedln</text>
+            <p>Linkedln</p>
           </button>
         </a>
-        <text className="App-About-Text">About</text>
-        <text className="App-About-Para">I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices like OWASP Top 10, and I am always looking for new things to learn.</text>
-        <text className="App-Interest-Text">Interests</text>
-        <text className="App-Interest-Para">Gaming. Programming. Music. Photography. Graphics Design. Penetration Testing.  </text>
+        <h2 className="App-About-Text">About</h2>
+        <p className="App-About-Para">I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices like OWASP Top 10, and I am always looking for new things to learn.</p>
+        <h2 className="App-Interest-Text">Interests</h2>
+        <p className="App-Interest-Para">Gaming. Programming. Music. Photography. Graphics Design. Penetration Testing.  </p>
               
       </div>
       <footer className="App-Footer-Social">
         <nav className="Navbar">
-          <a classname="F-Facbook" href="https://www.facebook.com/profile.php?id=100076309787802" target="_blank" rel="noreferrer"> 
+          <a className="F-Facbook" href="https://www.facebook.com/profile.php?id=100076309787802" target="_blank" rel="noreferrer"> 
             <img src={facebook} className="F-Facebook" alt="Facebook"/>
           </a>
-          <a classname="F-Github" href="https://github.com/joehanmisquitta" target="_blank" rel="noreferrer">
+          <a className="F-Github" href="https://github.com/joehanmisquitta" target="_blank" rel="noreferrer">
             <img src={github} className="F-Github" alt="Github"/>
           </a>
-          <a classname="F-Twitter" href="https://twitter.com/MisquittaJoehan" target="_blank" rel="noreferrer">
-            <img src={twitter} classname="F-Twitter" alt="Twitter"/>
+          <a className="F-Twitter" href="https://twitter.com/MisquittaJoehan" target="_blank" rel="noreferrer">
+            <img src={twitter} className="F-Twitter" alt="Twitter"/>
           </a>
         </nav>
       </footer>

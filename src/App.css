@@ -21,8 +21,8 @@ border-radius: 10px 10px 10px 10px;
   position: absolute;
   width: 317px;
   height: 317px;
-  left: 116px;
-  top: 44px;
+  left: 21.1%;
+  top: 5.15%;
   border-radius: 10px 10px 0px 0px;
 
 }
@@ -32,8 +32,8 @@ border-radius: 10px 10px 10px 10px;
   position: absolute;
   width: 317px;
   height: 399px;
-  left: 116px;
-  top: 361px;
+  left: 21.1%;
+  top: 41.7%;
   background: #1A1B21;
   
   }
@@ -41,10 +41,10 @@ border-radius: 10px 10px 10px 10px;
 .App-Info-Title{
 /* Joehan Misquitta */
 position: absolute;
-width: 213px;
+width: 219px;
 height: 29px;
 left: 53px;
-top: 21px;
+top: 0px;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
@@ -61,7 +61,7 @@ position: absolute;
 width: 178.06px;
 height: 14.19px;
 left: 70px;
-top: 53px;
+top: 45px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -78,8 +78,8 @@ color: #F3BF99;
   position: absolute;
   width: 228px;
   height: 16px;
-  left: 45px;
-  top: 76px;
+  left: 14%;
+  top: 16%;
   
   font-family: 'Inter';
   font-style: normal;
@@ -105,8 +105,8 @@ gap: 8px;
 position: absolute;
 width: 115px;
 height: 34px;
-left: 35px;
-top: 107px;
+left: 11.4%;
+top: 26.9%;
 /* white */
 background: #FFFFFF;
 /* gray/300 */
@@ -115,7 +115,7 @@ border: 1px solid #D1D5DB;
 box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 border-radius: 6px;
 }
-.App-Info-Email > text{
+.App-Info-Email > p{
 /* Text */
 width: 36px;
 height: 16px;
@@ -145,14 +145,14 @@ gap: 8px;
 position: absolute;
 width: 115px;
 height: 34px;
-left: 167px;
-top: 107px;
+left: 53%;
+top: 26.9%;
 background: #5093E2;
 /* shadow/sm */
 box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 border-radius: 6px;
 }
-.App-Info-Linkedln > text{
+.App-Info-Linkedln > p{
   /* Text */
   width: 57px;
   height: 16px;
@@ -173,8 +173,8 @@ border-radius: 6px;
   position: absolute;
   width: 242.71px;
   height: 21px;
-  left: 36px;
-  top: 174px;
+  left: 11.4%;
+  top: 38%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -188,8 +188,8 @@ border-radius: 6px;
   position: absolute;
   width: 247px;
   height: 61px;
-  left: 36px;
-  top: 200px;
+  left: 11.4%;
+  top: 45%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -204,8 +204,8 @@ border-radius: 6px;
   position: absolute;
   width: 242.71px;
   height: 21px;
-  left: 36px;
-  top: 288px;
+  left: 11.4%;
+  top: 70%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -219,8 +219,8 @@ border-radius: 6px;
   position: absolute;
   width: 247px;
   height: 61px;
-  left: 36px;
-  top: 314px;
+  left: 11.4%;
+  top: 77%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -234,8 +234,8 @@ border-radius: 6px;
   position: absolute;
   width: 317px;
   height: 64px;
-  left: 116px;
-  top: 760px;
+  left: 21%;
+  top: 87.5%;
 
   background: #161619;
   border-radius: 0px 0px 10px 10px;
