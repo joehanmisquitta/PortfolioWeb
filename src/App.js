@@ -13,9 +13,9 @@ export default function App() {
       <img src={Face} className="Face" alt="Face"/>
       <div className="App-Main">
         <h2 className="App-Info-Title">Joehan Misquitta</h2>
-        <h3 className="App-Info-Designation">Frontend Developer</h3>
+        <h3 className="App-Info-Designation">BSc.IT Graduate</h3>
         <h3 className="App-Info-Website">joehanmisquitta.com</h3>
-        <a href="mailto:joehanm10@gmail.com?subject=I am Contacting you From Your Portfolio Website" rel="noreferrer">
+        <a href="mailto:joehanm10@gmail.com?subject=I Recently Visited Your Website" rel="noreferrer">
           <button className="App-Info-Email">
             <img src={Email} alt="Email"/>
             <p>Email</p>
@@ -29,7 +29,7 @@ export default function App() {
           </button>
         </a>
         <h2 className="App-About-Text">About</h2>
-        <p className="App-About-Para">I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices like OWASP Top 10, and I am always looking for new things to learn.</p>
+        <p className="App-About-Para">I am an aspiring software developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and I am always looking for new things to learn.</p>
         <h2 className="App-Interest-Text">Interests</h2>
         <p className="App-Interest-Para">Gaming. Programming. Music. Photography. Graphics Design. Penetration Testing.  </p>
               
@@ -50,7 +50,3 @@ export default function App() {
     </div>
   );
 }
-/*
-<img scr={instagram} classname="F-Instagram" alt="Instagram"></img>
-<img src={twitter} classname="F-Twitter" alt="Twitter"></img>
-*/
