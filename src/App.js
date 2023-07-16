@@ -29,7 +29,7 @@ export default function App() {
           </button>
         </a>
         <h2 className="App-About-Text">About</h2>
-        <p className="App-About-Para">I am an aspiring software developer with a particular interest in Cybersecurity, Automation and Photography and I am always looking forward to learning new things.</p>
+        <p className="App-About-Para">Hi, I’m Joehan Misquitta, an IT student at the University of Mumbai. I’m passionate about cybersecurity and learning new skills in this field. I’m also an amateur photographer who loves to capture the beauty and diversity of the world. I’m always open to new opportunities and challenges that can help me grow as a professional and as a person. Feel free to connect with me and check out my work.</p>
         <h2 className="App-Interest-Text">Interests</h2>
         <p className="App-Interest-Para">Gaming. Programming. Music. Photography. Graphics Design. Ethical Hacking.  </p>
               
