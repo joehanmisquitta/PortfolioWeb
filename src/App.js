@@ -13,7 +13,7 @@ export default function App() {
       <img src={Face} className="Face" alt="Face"/>
       <div className="App-Main">
         <h2 className="App-Info-Title">Joehan Misquitta</h2>
-        <h3 className="App-Info-Designation">BSc.IT Graduate</h3>
+        <h3 className="App-Info-Designation">MSc.IT Graduate</h3>
         <h3 className="App-Info-Website">joehanmisquitta.com</h3>
         <a href="mailto:joehanm10@gmail.com?subject=I Recently Visited Your Website" rel="noreferrer">
           <button className="App-Info-Email">
@@ -29,7 +29,7 @@ export default function App() {
           </button>
         </a>
         <h2 className="App-About-Text">About</h2>
-        <p className="App-About-Para">Hi, I’m Joehan Misquitta, an IT student at the University of Mumbai. I’m passionate about cybersecurity and learning new skills in this field. I’m also an amateur photographer who loves to capture the beauty and diversity of the world. I’m always open to new opportunities and challenges that can help me grow as a professional and as a person. Feel free to connect with me and check out my work.</p>
+        <p className="App-About-Para">Hi, I’m Joehan Misquitta, an IT Graduate from the University of Mumbai. I’m passionate about cybersecurity and learning new skills in this field. I’m also an amateur photographer who loves to capture the beauty and diversity of the world. I’m always open to new opportunities and challenges that can help me grow as a professional and as a person. Feel free to connect with me and check out my work.</p>
         <h2 className="App-Interest-Text">Interests</h2>
         <p className="App-Interest-Para">Gaming. Programming. Music. Photography. Graphics Design. Ethical Hacking.  </p>
               
