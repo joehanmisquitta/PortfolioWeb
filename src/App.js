@@ -20,7 +20,7 @@ const CONFIG = {
   education:     'MSc IT, Wilson College (Autonomous), University of Mumbai',
 
   // ── Contact ──────────────────────────────────────────────────
-  email:         'joehanmisquitta@gmail.com',
+  email:         'joehanm@gmail.com',
   phone:         '',                         // e.g. '+91 98765 43210' — leave '' to hide
   emailSubject:  'I Saw Your Portfolio',     // pre-fills the subject line
 
