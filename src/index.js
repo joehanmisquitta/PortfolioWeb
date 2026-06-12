@@ -5,17 +5,17 @@ import App from './App';
 
 
 // ── Page title ──────────────────────────────────────────────────
-document.title = 'Joehan Misquitta — Security Engineer';
+document.title = 'Joehan Misquitta - CyberSecurity Engineer';
  
 // ── Meta: description (shown in Google search snippets) ─────────
 const metaDesc = document.createElement('meta');
 metaDesc.name    = 'description';
-metaDesc.content = 'Security Engineer specialising in VAPT and cloud security. MSc IT (Cybersecurity), Mumbai. AWS & Azure certified.';
+metaDesc.content = 'CyberSecurity Engineer specialising in VAPT and cloud security. MSc IT (Cybersecurity), Mumbai. AWS & Azure certified.';
 document.head.appendChild(metaDesc);
  
 // ── Meta: Open Graph (WhatsApp / LinkedIn / Twitter previews) ───
 const ogTags = [
-  { property: 'og:title',       content: 'Joehan Misquitta — Security Engineer' },
+  { property: 'og:title',       content: 'Joehan Misquitta - CyberSecurity Engineer' },
   { property: 'og:description', content: 'VAPT & Cloud Security · MSc IT (Cybersecurity) · Mumbai' },
   { property: 'og:type',        content: 'website' },
   { property: 'og:url',         content: 'https://itsjoehan.com' },
