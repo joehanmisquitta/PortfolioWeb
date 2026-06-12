@@ -17,10 +17,10 @@ const CONFIG = {
 
   // Location & education
   location:      'Mumbai, India',
-  education:     'MSc IT, Wilson College (Autonomous), University of Mumbai',
+  education:     'MSc IT (Cybersecurity)',
 
   // ── Contact ──────────────────────────────────────────────────
-  email:         'joehanm@gmail.com',
+  email:         'joehanm10@gmail.com',
   phone:         '',                         // e.g. '+91 98765 43210' — leave '' to hide
   emailSubject:  'I Saw Your Portfolio',     // pre-fills the subject line
 
@@ -434,7 +434,7 @@ export default function App() {
       {/* ── SKILLS ───────────────────────────────────────── */}
       <section id="skills" className="pf-section" aria-labelledby="skills-heading">
         <div className="pf-section-inner">
-          <span className="pf-eyebrow reveal">// 01 — Capabilities</span>
+          <span className="pf-eyebrow reveal">{'// 01 — Capabilities'}</span>
           <h2 id="skills-heading" className="pf-section-heading reveal">Technical Stack</h2>
           <div className="pf-skills-grid">
             {SKILLS.map(({ category, items }, i) => (
@@ -457,7 +457,7 @@ export default function App() {
       {/* ── EXPERIENCE ───────────────────────────────────── */}
       <section id="experience" className="pf-section" aria-labelledby="exp-heading">
         <div className="pf-section-inner">
-          <span className="pf-eyebrow reveal">// 02 — Background</span>
+          <span className="pf-eyebrow reveal">{'// 02 — Background'}</span>
           <h2 id="exp-heading" className="pf-section-heading reveal">Experience</h2>
 
           <div className="pf-timeline">
@@ -496,7 +496,7 @@ export default function App() {
       {/* ── PROJECTS ─────────────────────────────────────── */}
       <section id="projects" className="pf-section" aria-labelledby="proj-heading">
         <div className="pf-section-inner">
-          <span className="pf-eyebrow reveal">// 03 — Portfolio</span>
+          <span className="pf-eyebrow reveal">{'// 03 — Portfolio'}</span>
           <h2 id="proj-heading" className="pf-section-heading reveal">Security Projects</h2>
           <p className="pf-section-sub reveal">
             Hands-on detection labs and CTI tooling built around my AWS Cloud Practitioner pathway —
@@ -552,24 +552,32 @@ export default function App() {
       {/* ── CERTIFICATIONS ───────────────────────────────── */}
       <section id="certifications" className="pf-section" aria-labelledby="certs-heading">
         <div className="pf-section-inner">
-          <span className="pf-eyebrow reveal">// 04 — Credentials</span>
+          <span className="pf-eyebrow reveal">{'// 04 — Credentials'}</span>
           <h2 id="certs-heading" className="pf-section-heading reveal">Certifications &amp; Education</h2>
           <div className="pf-cert-grid">
             {CERTIFICATIONS.map((cert, i) => {
-              const CardWrapper = cert.credlyUrl
-                ? ({ children, ...props }) => <a href={cert.credlyUrl} target="_blank" rel="noopener noreferrer" {...props}>{children}</a>
-                : ({ children, ...props }) => <div {...props}>{children}</div>;
-              return (
-                <CardWrapper key={i} className={`pf-cert-card reveal d${i + 1}`}>
+              const cls = `pf-cert-card reveal d${i + 1}`;
+              const iconColor = cert.issuer === 'Amazon Web Services' ? '#FF9900' : '#0078D4';
+              const inner = (
+                <>
                   <div className="pf-cert-top">
                     <div className="pf-cert-icon">
-                      <Ico.Award size={18} color={cert.issuer === 'Amazon Web Services' ? '#FF9900' : '#0078D4'} />
+                      <Ico.Award size={18} color={iconColor} />
                     </div>
                     <span className="pf-cert-code">{cert.code}</span>
                   </div>
                   <div className="pf-cert-name">{cert.name}</div>
                   <div className="pf-cert-issuer">{cert.issuer}</div>
-                </CardWrapper>
+                </>
+              );
+              return cert.credlyUrl ? (
+                <a key={i} href={cert.credlyUrl} target="_blank" rel="noopener noreferrer" className={cls}>
+                  {inner}
+                </a>
+              ) : (
+                <div key={i} className={cls}>
+                  {inner}
+                </div>
               );
             })}
           </div>
@@ -593,7 +601,7 @@ export default function App() {
       {/* ── CONTACT ──────────────────────────────────────── */}
       <section id="contact" className="pf-section" aria-labelledby="contact-heading">
         <div className="pf-section-inner">
-          <span className="pf-eyebrow reveal">// 05 — Connect</span>
+          <span className="pf-eyebrow reveal">{'// 05 — Connect'}</span>
           <h2 id="contact-heading" className="pf-section-heading reveal">Get In Touch</h2>
           <p className="pf-section-sub reveal">
             Open to security engineering, VAPT, and cloud security roles. Let's connect.

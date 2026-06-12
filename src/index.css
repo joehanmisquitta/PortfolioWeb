@@ -1,0 +1,39 @@
+/* ═══════════════════════════════════════════════════════════════
+   index.css — loaded globally before App.css
+   Keep this minimal. All component styles live in App.css.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Universal reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base document */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #090E1B; /* matches --bg in App.css; prevents flash on load */
+  color: #E2E8F0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Remove default list styles globally */
+ul, ol { list-style: none; }
+
+/* Make images/svg responsive by default */
+img, svg { display: block; max-width: 100%; }
+
+/* Focus-visible ring — used by keyboard nav */
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid #38BDF8;
+  outline-offset: 3px;
+}
