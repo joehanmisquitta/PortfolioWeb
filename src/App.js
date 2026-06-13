@@ -5,35 +5,51 @@ import './App.css';
    ██  CONFIG — update all personal info here, nowhere else  ██
    ═══════════════════════════════════════════════════════════════ */
 const CONFIG = {
-  // Name
+  // ── Name ──────────────────────────────────────────────
   firstName:     'Joehan',
   lastName:      'Misquitta',
-  initials:      'J.', // used in nav logo
+  initials:      'J.',
 
-  // Role & tagline
+  // ── Role & tagline ───────────────────────────────────────
   title:         'Security Engineer',
   tagline:       'VAPT & Cloud Security',
   availability:  'Open to Opportunities',
 
-  // Location & education
+  // ── Location ────────────────────────────────────────────
   location:      'Mumbai, India',
-  education:     'MSc IT (Cybersecurity)',
+  education:     'MSc IT',
 
-  // ── Contact ──────────────────────────────────────────────────
+  // ── HUD card (hero right panel) ────────────────────────
+  hudRows: [
+    ['Role',        'Security Engineer · VAPT'],
+    ['Specialises', 'Vuln Mgmt · App Sec'],
+    ['Cloud',       'AWS · Azure'],
+    ['Framework',   'MITRE ATT&CK · OWASP'],
+    ['Location',    'Mumbai, IN'],
+    ['Status',      'Available'],
+  ],
+  hudChips: ['Qualys VMDR', 'GuardDuty', 'CloudTrail', 'Black Duck', 'Acunetix'],
+
+  // ── Copy strings ───────────────────────────────────────
+  scrollHint:    'scroll to explore',
+  projectsIntro: 'Hands-on detection labs and CTI tooling built around my AWS Cloud Practitioner pathway — demonstrating practical security engineering capability.',
+  contactIntro:  "Open to security engineering, VAPT, and cloud security roles. Let's connect.",
+
+  // ── Contact ────────────────────────────────────────────
   email:         'joehanm10@gmail.com',
-  phone:         '',                         // e.g. '+91 98765 43210' — leave '' to hide
-  emailSubject:  'I Saw Your Portfolio',     // pre-fills the subject line
+  phone:         '',
+  emailSubject:  '',
 
-  // ── Links ─────────────────────────────────────────────────────
+  // ── Links ─────────────────────────────────────────────
   website:       'https://itsjoehan.com',
   websiteLabel:  'itsjoehan.com',
   linkedin:      'https://www.linkedin.com/in/joehan-misquitta/',
   github:        'https://github.com/joehanmisquitta',
   twitter:       'https://twitter.com/MisquittaJoehan',
 
-  // ── Footer ────────────────────────────────────────────────────
+  // ── Footer ────────────────────────────────────────────
   copyrightYear: '2026',
-};
+}
 
 /* ═══════════════════════════════════════════════════════════════
    ██  DATA — edit your stats, skills, projects, certs here  ██
@@ -123,6 +139,22 @@ const CERTIFICATIONS = [
     credlyUrl: null,
   },
   // ── Add more certs below ──────────────────────────────────────
+];
+
+const EDUCATION = [
+  {
+    degree:      'Master of Science',
+    field:       'Information Technology',
+    institution: 'Wilson College (Autonomous), University of Mumbai',
+    badge:       'Postgraduate',
+  },
+  {
+    degree:      'Bachelor of Science',
+    field:       'Information Technology',
+    institution: 'R.D. National College, University of Mumbai',
+    badge:       'Undergraduate',
+  },
+  // ── Add more degrees below ────────────────────────────────────
 ];
 
 
@@ -385,7 +417,7 @@ export default function App() {
 
             <div className="pf-scroll-hint" aria-hidden="true">
               <span className="pf-scroll-line" />
-              scroll to explore
+              {CONFIG.scrollHint}
             </div>
           </div>
 
@@ -401,22 +433,22 @@ export default function App() {
                 <span className="pf-hud-title">security.profile</span>
               </div>
 
-              {[
-                ['Role',        <><span className="pf-ha">{CONFIG.title}</span> · VAPT</>],
-                ['Specialises', 'Vuln Mgmt · App Sec'],
-                ['Cloud',       'AWS (CLF-C02) · Azure'],
-                ['Framework',   'MITRE ATT&CK · OWASP'],
-                ['Location',    CONFIG.location],
-                ['Status',      <><span className="pf-sdot pf-sdot-inline" /><span className="pf-hg">Available</span></>],
-              ].map(([key, val], i) => (
+              {CONFIG.hudRows.map(([key, val], i) => (
                 <div key={i} className="pf-hud-row">
                   <span className="pf-hk">{key}</span>
-                  <span className="pf-hv">{val}</span>
+                  <span className="pf-hv">
+                    {key === 'Status'
+                      ? <><span className="pf-sdot pf-sdot-inline" /><span className="pf-hg">{val}</span></>
+                      : key === 'Role'
+                        ? <><span className="pf-ha">{val.split(' · ')[0]}</span>{' · '}{val.split(' · ').slice(1).join(' · ')}</>
+                        : val
+                    }
+                  </span>
                 </div>
               ))}
 
               <div className="pf-hud-chips">
-                {['Qualys VMDR', 'GuardDuty', 'CloudTrail', 'Black Duck', 'Acunetix'].map(chip => (
+                {CONFIG.hudChips.map(chip => (
                   <span key={chip} className="pf-hud-chip">{chip}</span>
                 ))}
               </div>
@@ -499,8 +531,7 @@ export default function App() {
           <span className="pf-eyebrow reveal">{'// 03 — Portfolio'}</span>
           <h2 id="proj-heading" className="pf-section-heading reveal">Security Projects</h2>
           <p className="pf-section-sub reveal">
-            Hands-on detection labs and CTI tooling built around my AWS Cloud Practitioner pathway —
-            demonstrating practical security engineering capability.
+            {CONFIG.projectsIntro}
           </p>
           <div className="pf-projects-grid">
             {PROJECTS.map((proj, i) => (
@@ -583,17 +614,24 @@ export default function App() {
           </div>
 
           {/* Education */}
-          <div className="pf-edu-card reveal">
-            <div className="pf-edu-left">
-              <div className="pf-edu-icon">
-                <Ico.Database size={20} color="var(--accent)" />
+          <div className="pf-edu-stack">
+            {EDUCATION.map((edu, i) => (
+              <div key={i} className={`pf-edu-card reveal d${i + 1}`}>
+                <div className="pf-edu-left">
+                  <div className="pf-edu-icon">
+                    <Ico.Database size={20} color="var(--accent)" />
+                  </div>
+                  <div>
+                    <div className="pf-edu-title">{edu.degree}</div>
+                    {edu.field && (
+                      <div className="pf-edu-field">{edu.field}</div>
+                    )}
+                    <div className="pf-edu-sub">{edu.institution}</div>
+                  </div>
+                </div>
+                <span className="pf-edu-badge">{edu.badge}</span>
               </div>
-              <div>
-                <div className="pf-edu-title">MSc Information Technology</div>
-                <div className="pf-edu-sub">Cybersecurity Specialisation</div>
-              </div>
-            </div>
-            <span className="pf-edu-badge">Postgraduate</span>
+            ))}
           </div>
         </div>
       </section>
@@ -604,7 +642,7 @@ export default function App() {
           <span className="pf-eyebrow reveal">{'// 05 — Connect'}</span>
           <h2 id="contact-heading" className="pf-section-heading reveal">Get In Touch</h2>
           <p className="pf-section-sub reveal">
-            Open to security engineering, VAPT, and cloud security roles. Let's connect.
+            {CONFIG.contactIntro}
           </p>
           <div className="pf-contact-links reveal">
             {CONTACT_LINKS.map(({ label, icon, href, external }) => (

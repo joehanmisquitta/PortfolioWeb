@@ -838,6 +838,12 @@ a      { text-decoration: none; color: inherit; }
   flex-wrap: wrap;
   gap: 12px;
 }
+.pf-edu-stack {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .pf-edu-left {
   display: flex;
   gap: 16px;
